@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Button from '@mui/material/Button';
-import Snackbar from '@mui/material/Snackbar';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Button from "@material-ui/core/Button";
+import Snackbar from "@material-ui/core/Snackbar";
+import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 
 
 

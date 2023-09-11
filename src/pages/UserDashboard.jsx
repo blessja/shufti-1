@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate,  useParams } from 'react-router-dom';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import Grid from '@mui/material/Grid';
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import Grid from '@material-ui/core/Grid';
 import { logout, reset } from '../features/auth/authSlice';
 
 
@@ -34,7 +34,7 @@ function UserDashboard() {
   
   const fetchUserData = async (userId) => {
     try {
-      const response = await fetch(`https://shufti-server.onrender.com/api/users/${userId}`);
+      const response = await fetch(`https://shufti-production.up.railway.app/api/users/${userId}`);
       const data = await response.json();
 
       // console.log('Response:', data);
